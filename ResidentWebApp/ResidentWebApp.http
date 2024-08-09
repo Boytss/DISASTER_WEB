@@ -1,0 +1,6 @@
+@ResidentWebApp_HostAddress = http://localhost:5259
+
+GET {{ResidentWebApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

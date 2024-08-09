@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="~/Account/site.css" asp-append-version="true">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="/ResidentWebApp/wwwroot/logo/TayhiLogo.png" alt="Logo"></a>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="registration-section animate__animated animate__fadeInUp">
+            <h2>Registration</h2>
+            <form>
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="purokNumber">Purok Number</label>
+                    <select id="purokNumber" name="purokNumber" required>
+                        <option value="">Select Purok</option>
+                        <!-- Add options for Purok numbers here -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mobileNumber">Mobile Number</label>
+                    <input type="tel" id="mobileNumber" name="mobileNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="password-requirements">
+                        <p>Password must meet the following requirements:</p>
+                        <ul>
+                            <li>At least 8 characters</li>
+                            <li>At least one uppercase letter</li>
+                            <li>At least one lowercase letter</li>
+                            <li>At least one digit</li>
+                            <li>At least one special character</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Register</button>
+                </div>
+            </form>
+            <p>Already have an account? <a href="#">Login</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Resident Dashboard. All rights reserved.</p>
+    </footer>
+
+    <script src="/ResidentWebApp/wwwroot/js/app.js"></script>
+</body>
+</html>

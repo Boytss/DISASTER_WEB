@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\DISASTER_WEB\\ResidentWebApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\DISASTER_WEB\\ResidentWebApp\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\DISASTER_WEB\\ResidentWebApp\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\DISASTER_WEB\\ResidentWebApp\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\DISASTER_WEB\\ResidentWebApp\\wwwroot\\logo\\TayhiLogo.png",
+      "PackagePath": "staticwebassets\\logo\\TayhiLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\DISASTER_WEB\\ResidentWebApp\\wwwroot\\logo\\evacuate.png",
+      "PackagePath": "staticwebassets\\logo\\evacuate.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\DISASTER_WEB\\ResidentWebApp\\wwwroot\\logo\\helpful-tips.png",
+      "PackagePath": "staticwebassets\\logo\\helpful-tips.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\DISASTER_WEB\\ResidentWebApp\\wwwroot\\logo\\map (1).png",
+      "PackagePath": "staticwebassets\\logo\\map (1).png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\DISASTER_WEB\\ResidentWebApp\\wwwroot\\logo\\newspaper (1).png",
+      "PackagePath": "staticwebassets\\logo\\newspaper (1).png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\DISASTER_WEB\\ResidentWebApp\\wwwroot\\logo\\quick-tips.png",
+      "PackagePath": "staticwebassets\\logo\\quick-tips.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\DISASTER_WEB\\ResidentWebApp\\wwwroot\\logo\\video (1).png",
+      "PackagePath": "staticwebassets\\logo\\video (1).png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\DISASTER_WEB\\ResidentWebApp\\wwwroot\\logo\\weather-forecast.png",
+      "PackagePath": "staticwebassets\\logo\\weather-forecast.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ResidentWebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ResidentWebApp.props",
+      "PackagePath": "build\\ResidentWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ResidentWebApp.props",
+      "PackagePath": "buildMultiTargeting\\ResidentWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ResidentWebApp.props",
+      "PackagePath": "buildTransitive\\ResidentWebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,61 @@
+@model ResidentWebApp.Models.User
+@{
+    ViewData["Title"] = "Register";
+    Layout = "_Layout";
+}
+
+<section class="registration-section animate__animated animate__fadeInUp">
+    <h2>Registration</h2>
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+    }
+    <form method="post" asp-action="Register">
+        <div class="form-group">
+            <label asp-for="FirstName">First Name</label>
+            <input asp-for="FirstName" required />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="LastName">Last Name</label>
+            <input asp-for="LastName" required />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+    <label asp-for="PurokNumber">Purok Number</label>
+    <select asp-for="PurokNumber" required class="form-select">
+        <option value="" disabled selected>Select Purok</option>
+        @for (int i = 1; i <= 6; i++)
+        {
+            <option value="Purok @i">Purok @i</option>
+        }
+    </select>
+    <span asp-validation-for="PurokNumber" class="text-danger"></span>
+</div>
+        <div class="form-group">
+            <label asp-for="MobileNumber">Mobile Number</label>
+            <input asp-for="MobileNumber" type="tel" placeholder="e.g., 09123456789" required />
+            <span asp-validation-for="MobileNumber" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Username">Username</label>
+            <input asp-for="Username" required />
+            <span asp-validation-for="Username" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password">Password</label>
+            <input asp-for="Password" type="password" placeholder="e.g., P@ssw0rd123" required />
+            <span asp-validation-for="Password" class="text-danger"></span>
+            
+        </div>
+        <button type="submit" class="btn">Register</button>
+    </form>
+    <p>Already have an account? <a asp-action="Login">Login</a></p>
+</section>
+
+@section Scripts {
+     <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+   
+}
