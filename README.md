@@ -4,6 +4,7 @@
 
 ## Features
 - **User Registration & Authentication**: Residents can create an account and log in to access the platform.
+- **Weather Forecast**: Residents can view the latest update about weather and Forecast in their barangay.
 - **News and Events**: Residents can view the latest news and upcoming events in their barangay.
 - **Evacuation Centers**: A list of available evacuation centers with relevant details.
 - **Hazard Maps**: View maps indicating potential hazard areas in the barangay.
