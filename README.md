@@ -1,4 +1,4 @@
-# ResidentWebApp
+# Resident Disaster Preparedness
 
 **ResidentWebApp** is a web application designed for barangay residents. It allows residents to create an account, log in, and access important information such as news, events, available evacuation centers, hazard maps, and helpful disaster-related tips (videos and articles). All content is managed by the admin side.
 
@@ -26,4 +26,4 @@
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/DISASRER_WEB/ResidentWebApp.git
+   git clone https://github.com/Boytss/DISASTER_WEB.git
