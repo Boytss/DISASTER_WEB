@@ -7,13 +7,13 @@ namespace ResidentWebApp.Models
     public class User
     {
          public User()
-    {
-        FirstName = string.Empty;
-        LastName = string.Empty;
-        MobileNumber = string.Empty;
-        Username = string.Empty;
-        Password = string.Empty;
-    }
+        {
+            FirstName = string.Empty;
+            LastName = string.Empty;
+            MobileNumber = string.Empty;
+            Username = string.Empty;
+            Password = string.Empty;
+        }
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }

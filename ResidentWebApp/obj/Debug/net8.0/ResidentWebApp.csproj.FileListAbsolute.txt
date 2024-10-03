@@ -127,6 +127,7 @@ C:\Users\Admin\Desktop\DISASTER_WEB\ResidentWebApp\obj\Debug\net8.0\ResidentWebA
 C:\Users\Admin\Desktop\DISASTER_WEB\ResidentWebApp\obj\Debug\net8.0\ResidentWebApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Admin\Desktop\DISASTER_WEB\ResidentWebApp\obj\Debug\net8.0\ResidentWebApp.RazorAssemblyInfo.cache
 C:\Users\Admin\Desktop\DISASTER_WEB\ResidentWebApp\obj\Debug\net8.0\ResidentWebApp.RazorAssemblyInfo.cs
+C:\Users\Admin\Desktop\DISASTER_WEB\ResidentWebApp\obj\Debug\net8.0\ResidentWebApp.sourcelink.json
 C:\Users\Admin\Desktop\DISASTER_WEB\ResidentWebApp\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Admin\Desktop\DISASTER_WEB\ResidentWebApp\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Admin\Desktop\DISASTER_WEB\ResidentWebApp\obj\Debug\net8.0\staticwebassets\msbuild.ResidentWebApp.Microsoft.AspNetCore.StaticWebAssets.props

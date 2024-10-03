@@ -41,7 +41,7 @@ builder.Services.AddCors(options =>
     {
         //builder.WithOrigins("hhttps://b7d9-175-176-53-44.ngrok-free.app") // Your web page's URL
         //builder.WithOrigins("http://192.168.1.10:5259") // Your web page's URL
-        builder.AllowAnyOrigin() // Your web page's URL
+         builder.AllowAnyOrigin() // Your web page's URL
               .AllowAnyMethod()
               .AllowAnyHeader();
     });
@@ -98,7 +98,7 @@ app.MapControllers();
 app.MapDefaultControllerRoute(); // Use the default controller route to map controllers
 // Serve index.html at the root URL
 app.MapFallbackToFile("index.html");
-app.Urls.Add("http://*:5259");
-//app.Urls.Add("http://localhost:5259");
+//app.Urls.Add("http://*:5259");
+app.Urls.Add("http://localhost:5259");
 
 app.Run();

@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   browseTipsBtn.addEventListener('click', async () => {
     try {
         hideAllSections();
-        const response = await fetch('https://growing-piglet-badly.ngrok-free.app/api/Disasters');
+        const response = await fetch('http://localhost:5259/api/Disasters');
         if (!response.ok) {
             throw new Error(`Failed to fetch disasters: ${response.statusText}`);
         }
@@ -99,7 +99,7 @@ function displayDisasterButtons(disasters) {
 
 async function displayTutorialText(disasterName) {
   try {
-    const response = await fetch(`https://growing-piglet-badly.ngrok-free.app/api/TutorialText/${disasterName}`);
+    const response = await fetch(`http://localhost:5259/api/TutorialText/${disasterName}`);
     if (!response.ok) {
       throw new Error(`Failed to fetch tutorial text: ${response.statusText}`);
     }
@@ -151,11 +151,11 @@ function hideAllSections() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  
+    
   watchVideoBtn.addEventListener('click', async () => {
     try {
       hideAllSections();
-      const response = await fetch('https://growing-piglet-badly.ngrok-free.app/api/Videos');
+      const response = await fetch('http://localhost:5259/api/Videos');
       if (!response.ok) throw new Error('Network response was not ok');
       const videos = await response.json();
       displayVideos(videos);
@@ -185,7 +185,7 @@ function hideAllSections() {
     try {
       hideAllSections() 
       console.log('Read More button clicked');
-        const response = await fetch('https://growing-piglet-badly.ngrok-free.app/api/NewsEvents');
+        const response = await fetch('http://localhost:5259/api/NewsEvents');
         if (!response.ok) throw new Error('Network response was not ok');
         const newsEvents = await response.json();
         displayNewsEvents(newsEvents);
@@ -193,8 +193,13 @@ function hideAllSections() {
         newsSection.style.display = 'block';
         newsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } catch (error) {
-        console.error('Error fetching news events:', error);
-        newsList.innerHTML = `<p>Error: Unable to fetch news events. Please try again.</p>`;
+       console.error('Error fetching news events:', error);
+    if (error instanceof TypeError) {
+        console.error('Network error. API might be unavailable.');
+    } else {
+        console.error('API error response:', error.message);
+    }
+    newsList.innerHTML = `<p>Error: Unable to fetch news events. Please try again.</p>`;
     }
 });
 function displayNewsEvents(newsEvents) {
@@ -224,7 +229,7 @@ function displayNewsEvents(newsEvents) {
       try {
         hideAllSections() 
         console.log('explore button clicked');
-          const response = await fetch('https://growing-piglet-badly.ngrok-free.app/api/HazardMap');
+          const response = await fetch('http://localhost:5259/api/HazardMap');
           if (!response.ok) throw new Error('Network response was not ok');
           const HazardMap = await response.json();
           displayHazardMaps(HazardMap);
@@ -321,8 +326,8 @@ window.onclick = function(event) {
   findCentersBtn.addEventListener('click', async () => {
     try {
       hideAllSections();
-      //const response = await fetch('https://growing-piglet-badly.ngrok-free.app/api/EvacuationCenter');
-      const response = await fetch('https://growing-piglet-badly.ngrok-free.app/api/EvacuationCenter');
+      //const response = await fetch('http://localhost:5259/api/EvacuationCenter');
+        const response = await fetch('http://localhost:5259/api/EvacuationCenter');
       if (!response.ok) throw new Error('Network response was not ok');
       const centers = await response.json();
       displayEvacuationCenters(centers);
@@ -350,14 +355,14 @@ window.onclick = function(event) {
     roomsSection.classList.remove('hidden');
     roomsSection.classList.add('animate__fadeInUp');
 
-    const response = await fetch(`https://growing-piglet-badly.ngrok-free.app/api/EvacuationCenter/${centerId}/rooms`);
+    const response = await fetch(`http://localhost:5259/api/EvacuationCenter/${centerId}/rooms`);
     const data = await response.json(); // Use response.json() instead of response.text()
 
     if (!response.ok) {
       throw new Error(data.message || 'Failed to fetch rooms');
     }
 
-    displayRooms(data.rooms); // Assuming the response contains a 'rooms' property
+      (data.rooms); // Assuming the response contains a 'rooms' property
   } catch (error) {
     console.error(`Error fetching rooms for center ${centerId}:`, error);
     roomsMessage.textContent = `Error: ${error.message}. Please try again.`;
@@ -385,7 +390,7 @@ window.onclick = function(event) {
       roomsSection.classList.remove('hidden');
       roomsSection.classList.add('animate__fadeInUp');
   
-      const response = await fetch(`https://growing-piglet-badly.ngrok-free.app/api/EvacuationCenter/${centerId}/rooms`);
+      const response = await fetch(`http://localhost:5259/api/EvacuationCenter/${centerId}/rooms`);
       const data = await response.json();
   
       if (!response.ok) {
