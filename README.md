@@ -15,7 +15,7 @@
 - **Media Uploads**: Admins can upload videos and articles for disaster preparedness tips.
 
 ## Technologies Used
-- **Framework**: ASP.NET Core 8.0 MVC
+- **Framework**: ASP.NET  8.0 MVC
 - **Backend**: C#
 - **Database**: SQL Server
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap
