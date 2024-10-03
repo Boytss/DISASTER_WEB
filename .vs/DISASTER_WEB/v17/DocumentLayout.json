@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,6 +63,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1274391758:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -142,9 +146,9 @@
               "Title": "app.js",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\DISASTER_WEB\\ResidentWebApp\\wwwroot\\js\\app.js",
               "RelativeDocumentMoniker": "ResidentWebApp\\wwwroot\\js\\app.js",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\DISASTER_WEB\\ResidentWebApp\\wwwroot\\js\\app.js*",
-              "RelativeToolTip": "ResidentWebApp\\wwwroot\\js\\app.js*",
-              "ViewState": "AgIAALgAAAAAAAAAAAAcwLsAAAA2AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\DISASTER_WEB\\ResidentWebApp\\wwwroot\\js\\app.js",
+              "RelativeToolTip": "ResidentWebApp\\wwwroot\\js\\app.js",
+              "ViewState": "AgIAADUCAAAAAAAAAAAIwIgBAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-10-03T06:14:14.574Z",
               "EditorCaption": ""
